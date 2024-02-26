@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Использование веб-форм на сайте /p.2</title>
+  <link rel="stylesheet" href="index4.css">
+</head>
+<body>
+  <header>
+    <h2>Регистрация</h2>
+        <hr style="border: none; border-top: 2px solid lightgray;">
+    <div style="display: flex; align-items: start;">
+        <img src="images/Vkontakte.gif" width="38" height="38" alt="Логотип" style="margin: 21px 13px 0px 8px;">
+        <p><strong>ВКонтакте.ру</strong> - сетевой проект, который поможет Вам узнать больше о людях,
+             которые Вас<br>окружают, а также найти потерянных друзей и поддерживать с ними связь. Вы 
+             сможете<br>делиться информацией, ограничивая круг лиц, которым она будет доступна.</p>
+    </div>
+        
+  </header>
+  <main>
+    <h3>Имя</h3>
+    <hr style="border: none; border-top: 2px solid lightgray;">
+       <form action="/signup" method="POST" class="form">  
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Имя:</span><input type="text" name="first_name">&nbsp;<span class="context">Допускаются только настоящие имя и фамилия</span><br>
+          <span>Фамилия:</span><input type="text" name="last_name">&nbsp;<span class="context">Остальные регистрации будут удаляться</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span>E-Mail:</span><input type="text" required="required" class="email notnull"><br>
+          &nbsp;&nbsp;<span>Пароль:</span><input type="password" name="password">
+          <br>
+       
+    <h3>Образование</h3>
+    <hr style="border: none; border-top: 2px solid lightgray;">
+
+          &nbsp;&nbsp;&nbsp;&nbsp;<label>Страна:</label>
+            <select name="country" style="font-size: 17px;">
+            <option>- Выберите страну -</option>     
+            <option>Беларусь</option>
+            <option>Россия</option>
+            <option>Украина</option>
+            <option>Польша</option>
+            <option>Литва</option>
+            <option>Латвия</option>
+            <option>Эстония</option>
+            <option>США</option>
+            </select><br> 
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Город:</label>
+            <select name="city" style="font-size: 17px;">
+            <option>- Выберите город -</option>    
+            <option>Минск</option>
+            <option>Москва</option>
+            <option>Киев</option>
+            <option>Варшава</option>
+            <option>Вильнюс</option>
+            <option>Рига</option>
+            <option>Таллин</option>
+            <option>Вашингтон</option>
+            </select>
+            <p style="margin-left: 96px; margin-top: -5px; font-size: 78%; font-weight: bold; letter-spacing: 0px; color:#5a6879;">Город, где Вы учились в школе или вузе:</p>
+            <br>
+    <h4 style="margin-top: 23px;">Школа</h4>   
+    <hr style="border: none; border-top: 2px solid lightgray; margin-top: -1px;">     
+    &nbsp;&nbsp;&nbsp;&nbsp;<label>Школа:</label>
+    <select name="school" style="margin-top: 7px; width: 209px; font-size: 17px;">
+    <option>- Выберите школу -</option>
+    <option>Гимназия №56 Минск</option>
+    <option>Гимназия №10 Минск</option>
+    <option>Гимназия №7 Минск</option>
+    <option>Лицей №1 Минск</option>
+    <option>Школа №101 Минск</option>
+    <option>Школа №145 Минск</option>
+    <option>Начальная школа №198 Минск</option>
+    </select>    
+    
+    <h4 style="margin-top: 9px;">Университет</h4>
+    <hr style="border: none; border-top: 2px solid lightgray; margin-bottom: 7px;">
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Вуз:</label>
+    <select name="high school" style="margin-top: 7px; width: 209px; font-size: 17px;">
+    <option>- Выберите ВУЗ -</option>
+    <option>Брестский государственный технический университет</option>
+    <option>Витебский государственный университет имени П. М. Машерова</option>
+    <option>Гомельский государственный медицинский университет</option>
+    <option>Гродненский государственный университет имени Янки Купалы</option>
+    <option>Белорусский государственный технологический университет</option>
+    <option>Институт бизнеса БГУ</option>
+    <option>Могилевский государственный университет имени А. А. Кулешова</option>
+    </select><br>
+
+     
+    <input class="btn" type="submit" name="submit" value="Зарегистрироваться">
+   
+    </form>
+  </main>
+
+  <footer class="foot">
+  <span class="context">Фактом регистрации Вы соглашаетесь с</span> <a href="/Пользовательским-соглашением"> Пользовательским соглашением</a>
+  </footer>
+</body>
+</html>
